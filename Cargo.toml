@@ -41,7 +41,7 @@ required-features = ["render"]
 [dependencies]
 bevy = { version = "0.13", default-features = false, features = ["bevy_asset"] }
 # egui = { version = "0.27", default-features = false, features = ["bytemuck"] }
-egui = { git = "https://github.com/cessationoftime/egui", rev = "4b87cf42304fa27aceda3aca522b5e7341652e9d", features = ["bytemuck"] }
+egui = { git = "https://github.com/cessationoftime/egui", branch= "master", features = ["bytemuck"] }
 
 webbrowser = { version = "0.8.2", optional = true }
 
