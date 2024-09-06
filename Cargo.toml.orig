@@ -1,6 +1,10 @@
 [package]
 name = "bevy_egui"
+<<<<<<< HEAD
+version = "0.27.0"
+=======
 version = "0.27.1"
+>>>>>>> e27b9466a36acb5c06bf9cf6c074c08698df93bb
 authors = ["mvlabat <mvlabat@gmail.com>"]
 description = "A plugin for Egui integration into Bevy"
 license = "MIT"
@@ -40,7 +44,13 @@ required-features = ["render"]
 
 [dependencies]
 bevy = { version = "0.13", default-features = false, features = ["bevy_asset"] }
+<<<<<<< HEAD
+# egui = { version = "0.27", default-features = false, features = ["bytemuck"] }
+egui = { git = "https://github.com/cessationoftime/egui", branch= "master", features = ["bytemuck"] }
+
+=======
 egui = { version = "0.27", default-features = false, features = ["bytemuck"] }
+>>>>>>> e27b9466a36acb5c06bf9cf6c074c08698df93bb
 webbrowser = { version = "0.8.2", optional = true }
 
 [target.'cfg(not(any(target_arch = "wasm32", target_os = "android")))'.dependencies]
